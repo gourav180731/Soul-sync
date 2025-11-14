@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f2ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header {
+    background: #764ba2;
+    color: #fff;
+    padding: 30px 0 20px 0;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(100, 61, 136, 0.13);
+}
+.sponsor {
+    font-size: 15px;
+    margin-top: 7px;
+}
+nav {
+    background: #efdfff;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+    box-shadow: 0 2px 7px rgba(118, 75, 162, 0.07);
+}
+nav button {
+    background: #bfaee6;
+    border: none;
+    padding: 12px 26px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+nav button:hover {
+    background: #764ba2;
+    color: #fff;
+}
+.section {
+    display: none;
+    padding: 32px 20px 30px 20px;
+    max-width: 680px;
+    margin: 35px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 14px #dab2ff69;
+}
+.section.active {
+    display: block;
+}
+#chat-history {
+    background: #f3f3f3;
+    border-radius: 10px;
+    min-height: 110px;
+    max-height: 220px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 12px;
+}
+#chat-input {
+    width: 75%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #bfaee6;
+}
+#diaryEntry {
+    width: 80%;
+    height: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bfaee6;
+    margin-bottom: 10px;
+}
+#diaryHistory {
+    margin-top: 18px;
+    background: #f7ecfe;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    min-height: 30px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+audio {
+    width: 320px;
+    margin: 12px 0;
+    outline: none;
+}
+button {
+    margin: 7px 0 0 7px;
+    background: #c3b1e1;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover {
+    background: #764ba2;
+    color: #fff;
+}
+#gameArea {
+    margin-top: 15px;
+}
+table.tictac {
+    margin:auto;
+    border-collapse:collapse;
+}
+table.tictac td {
+    width:55px;height:55px;font-size:1.7em;
+    text-align:center;border:2px solid #764ba2;
+    cursor:pointer;
+    background:#ece3fa;
+    user-select:none;
+}
+.delete-btn-chat {
+    margin-left: 8px;
+    background: none;
+    color: #764ba2;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+.delete-btn-chat:hover {
+    color: #b71c1c;
+}
+
+
+

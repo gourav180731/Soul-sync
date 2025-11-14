@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoulSync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SoulSync - Your Emotional Companion</h1>
+        <div class="sponsor">
+            Sponsored by <a href="https://conversational-ai.agora.io/" target="_blank" style="color:#fff;text-decoration:underline;">Agora</a>
+        </div>
+    </header>
+    <nav>
+        <button onclick="showSection('chatbot')">AI Chatbot</button>
+        <button onclick="showSection('stress')">Stress Relief</button>
+        <button onclick="showSection('diary')">Diary</button>
+        <button onclick="showSection('games')">Fun & Activity</button>
+    </nav>
+    <main>
+        <!-- Chatbot Section -->
+        <section id="chatbot" class="section">
+            <h2>AI Chatbot</h2>
+            <div id="chat-history"></div>
+            <input type="text" id="chat-input" placeholder="Share your feelings..." onkeydown="if(event.key==='Enter'){sendMessage();}" />
+            <button onclick="sendMessage()">Send</button>
+        </section>
+        <!-- Stress Relief Section -->
+        <section id="stress" class="section">
+            <h2>Stress Relief Music</h2>
+            <audio id="musicPlayer" controls loop>
+                <source src="https://www.bensound.com/bensound-music/bensound-relaxing.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <br>
+            <button onclick="playMusic()">Play</button>
+            <button onclick="pauseMusic()">Pause</button>
+        </section>
+        <!-- Diary Section -->
+        <section id="diary" class="section">
+            <h2>Daily Diary</h2>
+            <textarea id="diaryEntry" placeholder="Express yourself here..."></textarea><br>
+            <button onclick="saveDiary()">Save Diary</button>
+            <div id="diaryHistory"></div>
+        </section>
+        <!-- Games Section -->
+        <section id="games" class="section">
+            <h2>Brain Games</h2>
+            <button onclick="showGame('sudoku')">Sudoku</button>
+            <button onclick="showGame('zipLine')">Zip Line</button>
+            <button onclick="showGame('ticTacToe')">Tic Tac Toe</button>
+            <div id="gameArea"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
