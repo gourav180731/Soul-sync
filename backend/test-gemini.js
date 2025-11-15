@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 
-const API_KEY = "AIzaSyB62E0AccgbUewpiacGP-pubX6huBJSO4I";
+const API_KEY = "AIzaSyBPbiBd1WQRJnhuV-ByotOgP29g97CxUvA";
 
 async function testGemini() {
   try {
