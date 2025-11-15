@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Your Gemini API Key
-const API_KEY = "AIzaSyB62E0AccgbUewpiacGP-pubX6huBJSO4I";
+const API_KEY = "AIzaSyBPbiBd1WQRJnhuV-ByotOgP29g97CxUvA";
 
 // ---------------- MEMORY STORE ----------------
 let chatHistory = []; // Stores entire conversation
